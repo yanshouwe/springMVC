@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页</title>
+</head>
+<body>
+<h1 th:text="欢迎您"></h1>
+<form th:action="@{/springmvc/testParam}" th:method="post">
+    <table style="text-align: center;">
+        <tr>
+            <td>name:</td>
+            <td><input type="text" name="name" required><br></td>
+        </tr>
+        <tr>
+            <td>url:</td>
+            <td><input type="text" name="url" required><br></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="验证 params属性">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
